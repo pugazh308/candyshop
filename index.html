@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Candy  Shop</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showHome()">Home</a>
+        <a href="#" onclick="showAbout()">About</a>
+        <a href="#" onclick="showContact()">Contact</a>
+    </nav>
+
+    <section id="homeSection">
+        <h2>Welcome to our Candy Shop!</h2>
+        <p>Explore our delicious collection of candies.</p>
+    </section>
+
+    <section id="aboutSection" style="display: none;">
+        <h2>About Us</h2>
+        <p>We are passionate about providing the best candies to our customers.</p>
+    </section>
+
+    <section id="contactSection" style="display: none;">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us through email or phone.</p>
+    </section>
+
+    
+
+    <script>
+        function showHome() {
+            document.getElementById('homeSection').style.display = 'block';
+            document.getElementById('aboutSection').style.display = 'none';
+            document.getElementById('contactSection').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('homeSection').style.display = 'none';
+            document.getElementById('aboutSection').style.display = 'block';
+            document.getElementById('contactSection').style.display = 'none';
+        }
+
+        function showContact() {
+            document.getElementById('homeSection').style.display = 'none';
+            document.getElementById('aboutSection').style.display = 'none';
+            document.getElementById('contactSection').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
